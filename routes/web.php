@@ -21,8 +21,9 @@ Route::view('about','about');
 
 Route::get('userslist','UsersController@userslist')->middleware('auth');
 
-Route::get('user/{id}', 'UsersController@getUser');
+Route::get('user/{id}', 'UsersController@getUser')->middleware('auth');
 
+Route::view('dashboard','admin.dashboard');
 
 Auth::routes();
 

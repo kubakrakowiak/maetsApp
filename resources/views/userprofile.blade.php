@@ -14,7 +14,7 @@
         </div>
         <div class="widget-user-image">
             <div class="d-flex justify-content-center">
-                <img class="img-circle elevation-2" src="https://png.pngtree.com/svg/20161212/f93e57629c.png" alt="User Avatar" width="200">
+                <img class="img-circle elevation-2" src="https://png.pngtree.com/svg/20161212/f93e57629c.png" alt="User Avatar" width="200" height="200">
             </div>
         </div>
         <div class="card-footer">
