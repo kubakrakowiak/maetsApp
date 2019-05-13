@@ -17,6 +17,13 @@ Route::get('/', function () {
 
 Route::view('contact','contact');
 
+Route::view('about','about');
+
+Route::get('userslist','UsersController@userslist')->middleware('auth');
+
+Route::get('user/{id}', 'UsersController@getUser');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
