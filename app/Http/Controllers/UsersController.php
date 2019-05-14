@@ -20,5 +20,11 @@ class UsersController extends Controller
 
         return view('userprofile',['userprofile' => $userprofile]);
     }
+    public function userslistAdmin(){
+        $userslist = User::paginate(10);
 
+        return view('admin_dash.users',[
+            'userslist'=>$userslist,
+        ]);
+    }
 }
