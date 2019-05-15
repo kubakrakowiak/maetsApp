@@ -8,4 +8,9 @@ class game extends Model
 {
     //
     protected $guarded = [];
+
+    public function dlc(){
+        return $this->belongsTo('App\game');
+    }
+
 }

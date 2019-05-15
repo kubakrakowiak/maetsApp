@@ -18,7 +18,10 @@
                     Contact
                 </a>
                 <a class="navbar-brand" href="{{ url('/userslist') }}">
-                    Users List
+                    Users
+                </a>
+                <a class="navbar-brand" href="{{ url('/gameslist') }}">
+                    Games
                 </a>
             </ul>
 
@@ -42,7 +45,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             @if (Auth::user()->is_admin===1)
-                                <a class="dropdown-item" href="dashboard">
+                                <a class="dropdown-item" href="../dashboard">
                                     Panel Administracyjny
                                 </a>
                             @endif
