@@ -31,6 +31,8 @@ Route::view('dashboard','admin_dash.dashboard')->middleware('auth');
 
 Route::get('dashboard/users','UsersController@userslistAdmin')->middleware('auth');
 
+Route::delete('dashboard/users/{id}','UsersController@destroy')->middleware('auth');
+
 Route::view('dashboard/games','admin_dash.games')->middleware('auth');
 
 Route::get('dashboard/games','GamesController@gamesList')->middleware('auth');
@@ -42,8 +44,6 @@ Route::post('dashboard/addgame','GamesController@addGame')->middleware('auth');
 Route::get('dashboard/adddlc','GamesController@gamesListToDlcs')->middleware('auth');
 
 Route::post('dashboard/adddlc','DlcsController@adddlc')->middleware('auth');
-
-Route::get('/dashboard/users/{id}/delete', 'UsersController@delUser')->middleware('auth');
 
 Auth::routes();
 

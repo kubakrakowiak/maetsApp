@@ -27,9 +27,9 @@ class UsersController extends Controller
             'userslist'=>$userslist,
         ]);
     }
-    public function delUser($usrid){
-        $user = User::find($usrid);
-        $user ->delete();
-        return redirect()->route('admin_dash.users');
+    public function destroy($id){
+        $user = User::find($id);
+        $user->delete();
+        return redirect('/dashboard/users');
     }
 }
