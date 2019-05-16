@@ -23,7 +23,7 @@
 
         @foreach ($gamesList as $game)
             <tr>
-                <td>{{$game->name}}</td><td>({{$game->developer}})</td><td>{{$game->genre}}</td><td><a href="/user/{{$game->id_game}}"><button type="button" class="btn btn-info">Sprawdz Gre</button></a></td>
+                <td>{{$game->name}}</td><td>({{$game->developer}})</td><td>{{$game->genre}}</td><td><a href="/game/{{$game->id}}"><button type="button" class="btn btn-info">Sprawdz Gre</button></a></td>
             </tr>
         @endforeach
         </tbody>

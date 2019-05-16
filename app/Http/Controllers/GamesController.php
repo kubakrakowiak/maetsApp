@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\dlc;
+use App\User;
+use App\user_game;
 use Illuminate\Http\Request;
 use App\game;
+use Illuminate\Support\Facades\Auth;
 
 class GamesController extends Controller
 {
@@ -47,11 +50,18 @@ class GamesController extends Controller
 
     }
     public function getGame($gameid){
-        $gameprofile = game::where('id_game',$gameid)->get();
+        $gameprofile = game::where('id',$gameid)->get();
         $dlcs = dlc::where('id_game',$gameid)->get();
+        $have = user_game::where('user_id','=',Auth::user()->id)->where('game_id','=',$gameid)->count();
+
+        //$players = User::find(1)->games()->where('game_id','=',$gameid)->get();
+        $players = game::find($gameid)->users()->where('game_id','=',$gameid)->paginate(15);
+
         return view('gameprofile',[
             'gameprofile' => $gameprofile,
             'dlcs' => $dlcs,
+            'have' => $have,
+            'players' => $players,
             ]);
     }
 }

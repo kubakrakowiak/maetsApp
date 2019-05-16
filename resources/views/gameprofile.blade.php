@@ -64,7 +64,17 @@
                     <img src="{{ asset('img/gameavatar.png') }}" style="border-radius: 8px" alt="" width="90%" class="rounded-lg game-logo">
                 </div>
                 <div class="col-9">
-                    <h1 class="display-2">{{$gameprofile[0]->name}}  <button class="btn btn-success tooltip" disabled>Kup Teraz  <span class="tooltiptext">Coming Soon</span></button></h1>
+                    <h1 class="display-2">{{$gameprofile[0]->name}}
+                        @if($have<1)
+                        <form method="post" style="display: inline" action="/game/{{$gameprofile[0]->id}}/buy/{{ Auth::user()->id }}">
+                            @csrf
+
+                            <button name="submit" class="btn btn-success">Kup Teraz</button></h1>
+                        </form>
+                        @else
+                            <button name="submit" class="btn btn-success" disabled>Już posiadasz {{$gameprofile[0]->name}}</button></h1>
+                        @endif
+
                 </div>
             </div>
             <div class="row">
@@ -91,7 +101,22 @@
 
                         </div>
                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            ..
+                            <div class="row pt-2">
+                            @foreach($players as $player)
+
+                                    <div class="col-sm-4 border-left border-top border-bottom border-right">
+                                        <div class="description-block">
+                                            <h5 class="description-header">{{$player->name}}</h5>
+                                            <span class="description-text">{{$player->email}}</span>
+                                        </div>
+                                        <!-- /.description-block -->
+                                    </div>
+
+                            @endforeach
+
+                            </div>
+                            <div class="pt-5">{{ $players->links() }}</div>
+
                         </div>
                         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                             ..

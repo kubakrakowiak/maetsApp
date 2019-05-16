@@ -15,15 +15,15 @@ class CreateUserGamesTable extends Migration
     {
         Schema::create('user_games', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('id_user')->unsigned();
-            $table->bigInteger('id_game')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
+            $table->bigInteger('game_id')->unsigned();
 
             $table->timestamps();
         });
         Schema::table('user_games', function($table)
         {
-            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('id_game')->references('id_game')->on('games')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('game_id')->references('id_game')->on('games')->onDelete('cascade');
         });
     }
 

@@ -27,9 +27,13 @@ Route::get('gameslist','GamesController@gamesListPublic')->middleware('auth');
 
 Route::get('game/{id}','GamesController@getGame')->middleware('auth');
 
+Route::post('game/{idgame}/buy/{iduser}','UsersController@buyGame')->middleware('auth');
+
 Route::view('dashboard','admin_dash.dashboard')->middleware('auth');
 
 Route::get('dashboard/users','UsersController@userslistAdmin')->middleware('auth');
+
+Route::delete('dashboard/users/{id}','UsersController@destroy')->middleware('auth');
 
 Route::view('dashboard/games','admin_dash.games')->middleware('auth');
 
