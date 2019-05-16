@@ -7,19 +7,19 @@
     <table class="table">
         <thead class="thead-light">
         <tr>
-            <th>
+            <th class="col-3">
                 Game
             </th>
-            <th>
+            <th class="col-3">
                 Developer
-            </th>
+            </th class="col-3">
             <th>
                 publisher
             </th>
-            <th>
+            <th class="col-1">
                 Price
             </th>
-            <th>
+            <th class="col-2">
                 Others
             </th>
         </tr>

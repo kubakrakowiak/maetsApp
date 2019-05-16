@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
     <h1 class="pt-4">Profil użytkownika {{$userprofile[0]->name}}</h1>
     <div class="card card-widget widget-user">
@@ -22,7 +21,7 @@
                 <div class="col-sm-4 border-right">
                     <div class="description-block">
                         <h5 class="description-header">GAMES</h5>
-                        <span class="description-text">3,200</span>
+                        <span class="description-text">{{$games_count}}</span>
                     </div>
                     <!-- /.description-block -->
                 </div>
@@ -47,7 +46,7 @@
             <div class="row border-top pt-2">
                 <div class="col-sm-4 border-right">
                     <div class="description-block">
-                        <h5 class="description-header">IMIE</h5>
+                        <h5 class="description-header">FIRSTNAME</h5>
                         <span class="description-text">{{$userprofile[0]->firstname}}</span>
                     </div>
                     <!-- /.description-block -->
@@ -55,7 +54,7 @@
                 <!-- /.col -->
                 <div class="col-sm-4 border-right">
                     <div class="description-block">
-                        <h5 class="description-header">NAZWISKO</h5>
+                        <h5 class="description-header">LASTNAME</h5>
                         <span class="description-text">{{$userprofile[0]->lastname}}</span>
                     </div>
                     <!-- /.description-block -->
@@ -63,7 +62,7 @@
                 <!-- /.col -->
                 <div class="col-sm-4">
                     <div class="description-block">
-                        <h5 class="description-header">DATA ZALOZENIA KONTA</h5>
+                        <h5 class="description-header">ACCOUNT CREATE DATE</h5>
                         <span class="description-text">{{$userprofile[0]->created_at}}</span>
                     </div>
                     <!-- /.description-block -->

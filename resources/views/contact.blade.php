@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+    @section('bg')
+        <img src="{{ asset('img/gamebg.png') }}" width="100%" height="auto">
+    @endsection
+
     @section('content')
         <h1 class="pt-4">Contact Us</h1>
 

@@ -19,8 +19,12 @@ class UsersController extends Controller
     }
     public function getUser($userid){
         $userprofile = User::where('id',$userid)->get();
+        $games_count = User::find($userid)->games()->where('user_id','=',$userid)->count();
 
-        return view('userprofile',['userprofile' => $userprofile]);
+        return view('userprofile',[
+           'userprofile' => $userprofile,
+           'games_count' => $games_count,
+           ]);
     }
     public function userslistAdmin(){
         $userslist = User::paginate(10);
