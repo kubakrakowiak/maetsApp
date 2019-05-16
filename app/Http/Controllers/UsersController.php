@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\game;
+use App\user_game;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
@@ -31,5 +33,12 @@ class UsersController extends Controller
         $user = User::find($id);
         $user->delete();
         return redirect('/dashboard/users');
+    }
+
+    public function buyGame($idgame, $iduser){
+        $user=User::find($iduser);
+        $user->Games()->syncWithoutDetaching([$idgame]);
+        //$user->Games()->attach($idgame);
+        return back();
     }
 }
