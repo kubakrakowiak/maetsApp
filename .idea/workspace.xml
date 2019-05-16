@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4de2a13e-0b0a-4ae5-80fb-7ff6700f4563" name="Default Changelist" comment="created project, install laravel, make repo">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gameslist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gameslist.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/userprofile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userprofile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -356,7 +352,7 @@
       <workItem from="1557851835368" duration="23000" />
       <workItem from="1557851912444" duration="663000" />
       <workItem from="1557945200388" duration="15644000" />
-      <workItem from="1557993475714" duration="20791000" />
+      <workItem from="1557993475714" duration="21391000" />
     </task>
     <task id="LOCAL-00001" summary="created project, install laravel, make repo">
       <created>1557524414427</created>
@@ -369,11 +365,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73385000" />
+    <option name="totallyTimeSpent" value="73985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16151386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
