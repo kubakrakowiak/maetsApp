@@ -35,6 +35,8 @@ Route::post('dashboard/addgame','GamesController@addGame')->middleware('auth');
 
 Route::get('dashboard/games','GamesController@gamesList')->middleware('auth');
 
+Route::get('/dashboard/users/{id}/delete', 'UsersController@delUser')->middleware('auth');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
