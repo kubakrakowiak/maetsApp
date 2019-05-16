@@ -63,9 +63,9 @@
 
     <header class="jumbotron jumbotron-fluid my-0 header">
         <div class="container text-left">
-            <h1 class="lead">
+            <h4 class="display-4">
                 MAETS Administration Dashboard
-            </h1>
+            </h4>
         </div>
     </header>
 

@@ -19,6 +19,24 @@
     <!-- Styles -->
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        .prefiks {
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            padding: 0 4px;
+            height: 16px;
+            line-height: 15px;
+            font-size: 14px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+        }
+        .prefiks_czerwony {
+            background: red;
+        }
+    </style>
+    @yield('head')
 </head>
 <body>
     <div id="app">
