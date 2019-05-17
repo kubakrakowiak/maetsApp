@@ -10,7 +10,7 @@
             <div class="form-group  col-4">
                 <select class="form-control" name="id_game" id="id_game">
                     @foreach($gamesList as $game)
-                    <option value="{{$game->id_game}}">{{$game->name}}</option>
+                    <option name="id_game" id="id_game" value="{{$game->id}}">{{$game->name}}</option>
                     @endforeach
                 </select>
             </div>
