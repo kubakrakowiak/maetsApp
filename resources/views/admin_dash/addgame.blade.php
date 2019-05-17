@@ -3,6 +3,7 @@
 
 @section('content')
     <div class="container">
+        <h1 class="text-center">MAETS GAMES</h1>
         <div class="card shadow mb-4">
             <div class="card-header py-3">
                 <div class="d-flex justify-content-start">
@@ -35,7 +36,7 @@
                                 Price
                             </label>
                             <div style="color: red;">{{$errors->first('price')}}</div>
-                            <input type="text" name="price" id="price" class="form-control">
+                            <input type="number" name="price" id="price" class="form-control">
                             <label for="genre" class="pr-2">
                                 Genre
                             </label>
@@ -45,10 +46,10 @@
                                 Game description
                             </label>
                             <div style="color: red;">{{$errors->first('desc_games')}}</div>
-                            <input type="text" name="desc_games" id="desc_games" class="form-control m-0">
+                            <textarea type="text" name="desc_games" id="desc_games" class="form-control m-0"></textarea>
                         </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Add Game</button>
+                    <button class="btn btn-primary mt-2" type="submit">Add Game</button>
                     @csrf
                 </form>
             </div>
