@@ -15,7 +15,7 @@
                 </select>
             </div>
         </div>
-        <input type="submit">Add Dlc</input>
+        <input type="submit" value="Add Dlc"/>
         @csrf
     </form>
 @endsection
