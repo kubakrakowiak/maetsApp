@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4de2a13e-0b0a-4ae5-80fb-7ff6700f4563" name="Default Changelist" comment="created project, install laravel, make repo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GamesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GamesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pliktestowy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/gameprofile.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="55" selection-start-line="55" selection-end-line="57" selection-end-column="11" />
+            <state relative-caret-position="402">
+              <caret line="73" selection-start-line="73" selection-end-line="74" selection-end-column="1" />
               <folding>
                 <element signature="e#1709#1732#0#HTML" expanded="true" />
               </folding>
@@ -30,67 +33,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/gameslist.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/userprofile.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GamesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="92" />
+            <state relative-caret-position="161">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#40#52#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="40" />
-              <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/game.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-              <folding>
-                <element signature="e#23#62#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="60" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="60" />
-              <folding>
-                <element signature="e#23#63#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,12 +95,12 @@
         <option value="$PROJECT_DIR$/resources/views/admin_dash/games.blade.php" />
         <option value="$PROJECT_DIR$/app/game.php" />
         <option value="$PROJECT_DIR$/resources/views/gameprofile.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/GamesController.php" />
         <option value="$PROJECT_DIR$/resources/views/contact.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/about.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/gameslist.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/resources/views/userprofile.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/GamesController.php" />
       </list>
     </option>
   </component>
@@ -240,7 +189,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="506" />
+    <option name="y" value="49" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -254,42 +204,26 @@
         <subPane>
           <expand>
             <path>
-              <item name="elo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elo" type="462c0819:PsiDirectoryNode" />
+              <item name="maetsApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maetsApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="elo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elo" type="462c0819:PsiDirectoryNode" />
+              <item name="maetsApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maetsApp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="elo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elo" type="462c0819:PsiDirectoryNode" />
+              <item name="maetsApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maetsApp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="elo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elo" type="462c0819:PsiDirectoryNode" />
+              <item name="maetsApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maetsApp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="elo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elo" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="elo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elo" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="elo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="elo" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -365,7 +299,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73985000" />
+    <option name="totallyTimeSpent" value="75713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -382,9 +316,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32900432" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.11147186" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.13217768" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.11147186" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32900432" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32900432" />
       <window_info anchor="bottom" id="LuaCheck" order="13" show_stripe_button="false" weight="0.32900432" />
@@ -393,9 +327,43 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32900432" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32900432" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32900432" />
+      <window_info anchor="bottom" id="LuaCheck" order="13" show_stripe_button="false" weight="0.32900432" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created project, install laravel, make repo" />
@@ -681,20 +649,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/gameprofile.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="55" selection-start-line="55" selection-end-line="57" selection-end-column="11" />
+        <state relative-caret-position="402">
+          <caret line="73" selection-start-line="73" selection-end-line="74" selection-end-column="1" />
           <folding>
             <element signature="e#1709#1732#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GamesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="92" />
-          <folding>
-            <element signature="e#40#52#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -720,6 +678,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GamesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#40#52#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
