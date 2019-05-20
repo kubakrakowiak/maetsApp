@@ -176,7 +176,7 @@
             <div class="container">
                 <div class="col-md-12 col-md-offset-2">
                     <!-- Section Description -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Our team consists of 3 developers. Each of us is very important pearson in this project, 'couse each of us has done a part of the project, and Maets the app would never be created.</p>
                 </div>
 
                 <!-- First Row of Speakers -->
@@ -195,9 +195,9 @@
                             <h4><span>Jakub</span>Krakowiak</h4>
                         </a>
                         <ul>
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>
+                            <li><a href="https://twitter.com/ProGramCs" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/jakub-krakowiak-a240a3177/%7Bcountry%3Dpl%2C+language%3Dpl%7D?trk=people-guest_profile-result-card_result-card_full-click"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/kubakrakowiak" target="_blank"><i class="fa fa-github"></i></a></li>
                         </ul>
                     </div>
 
