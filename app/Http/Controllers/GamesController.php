@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\dlc;
 use App\User;
 use App\user_game;
+use App\game_comment;
 use Illuminate\Http\Request;
 use App\game;
 use Illuminate\Support\Facades\Auth;
@@ -53,15 +54,27 @@ class GamesController extends Controller
         $gameprofile = game::where('id',$gameid)->get();
         $dlcs = dlc::where('id_game',$gameid)->get();
         $have = user_game::where('user_id','=',Auth::user()->id)->where('game_id','=',$gameid)->count();
-
+        $comments = game_comment::where('id_game',$gameid)->get();
         //$players = User::find(1)->games()->where('game_id','=',$gameid)->get();
         $players = game::find($gameid)->users()->where('game_id','=',$gameid)->paginate(15);
-
+        $rate = game_comment::avg('rating');
         return view('gameprofile',[
             'gameprofile' => $gameprofile,
             'dlcs' => $dlcs,
             'have' => $have,
             'players' => $players,
+            'comments' => $comments,
+            'rate'=>round($rate,2),
             ]);
+    }
+    public function addComment($gameid){
+        $user = Auth::user();
+        $data = request()->validate([
+            'content' => 'required|min:10',
+            'rating'  => 'required',
+        ]);
+        $data_full = ['user' => $user->name, 'content' => $data['content'], 'rating' => $data['rating'], 'id_game' => $gameid];
+        game_comment::create($data_full);
+        return back();
     }
 }

@@ -27,6 +27,8 @@ Route::get('gameslist','GamesController@gamesListPublic')->middleware('auth');
 
 Route::get('game/{id}','GamesController@getGame')->middleware('auth');
 
+Route::post('game/{id}','GamesController@addComment')->middleware('auth');
+
 Route::post('game/{idgame}/buy/{iduser}','UsersController@buyGame')->middleware('auth');
 
 Route::get('dashboard','StatisticsController@getStats')->middleware('auth');
