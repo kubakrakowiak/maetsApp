@@ -57,7 +57,7 @@ class GamesController extends Controller
         $comments = game_comment::where('id_game',$gameid)->get();
         //$players = User::find(1)->games()->where('game_id','=',$gameid)->get();
         $players = game::find($gameid)->users()->where('game_id','=',$gameid)->paginate(15);
-        $rate = game_comment::avg('rating');
+        $rate = game_comment::where('id_game','=',$gameid)->avg('rating');
         return view('gameprofile',[
             'gameprofile' => $gameprofile,
             'dlcs' => $dlcs,
