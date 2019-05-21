@@ -295,6 +295,7 @@
                         </div>
 
                         <div class="tab-pane fade pb-2" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            @if($ifcomment==0)
                             <div class="col-sm-12 border-left border-top border-bottom border-right pt-2">
                                 <h4 class="pl-4">Rate {{$gameprofile[0]->name}}</h4>
                                 <form action="/game/{{$gameprofile[0]->id}}" method="post">
@@ -324,6 +325,7 @@
 
                                 </form>
                             </div>
+                            @endif
                             <div class="row m-0">
                                 <div class="col-sm-12 border-left border-top border-bottom border-right">
                                 <div class="float-left">Avg Rating</div> <div class="float-right">{{$rate}}</div>
@@ -340,6 +342,7 @@
                                 <!-- /.description-block -->
                             </div>
                             @endforeach
+                            <div class="pt-5">{{ $comments->links() }}</div>
 
                         </div>
 

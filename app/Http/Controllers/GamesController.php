@@ -54,10 +54,12 @@ class GamesController extends Controller
         $gameprofile = game::where('id',$gameid)->get();
         $dlcs = dlc::where('id_game',$gameid)->get();
         $have = user_game::where('user_id','=',Auth::user()->id)->where('game_id','=',$gameid)->count();
-        $comments = game_comment::where('id_game',$gameid)->get();
+        $comments = game_comment::where('id_game',$gameid)->paginate(6);
         //$players = User::find(1)->games()->where('game_id','=',$gameid)->get();
         $players = game::find($gameid)->users()->where('game_id','=',$gameid)->paginate(15);
         $rate = game_comment::where('id_game','=',$gameid)->avg('rating');
+        $ifcomment = 0;
+        if (game_comment::where('id_game','=',$gameid)->where('user','=',Auth::user()->name)->count()>0)$ifcomment=1;
         return view('gameprofile',[
             'gameprofile' => $gameprofile,
             'dlcs' => $dlcs,
@@ -65,7 +67,9 @@ class GamesController extends Controller
             'players' => $players,
             'comments' => $comments,
             'rate'=>round($rate,2),
+            'ifcomment'=>$ifcomment,
             ]);
+
     }
     public function addComment($gameid){
         $user = Auth::user();
