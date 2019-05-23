@@ -170,6 +170,124 @@
     @endsection
 
     @section('content')
+
+        <!-- Modal -->
+        <div class="modal fade" id="kubaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content rounded-1">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Jakub Krakowiak</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body m-0 p-0">
+                        <div class="row m-0 p-0">
+                            <div class="col-md-6 m-0 p-0">
+                                <img class="m-0 p-0 rounded-left" style="border-top-left-radius:0px !important;" src="{{ asset('img/team/kuba-hover.jpg') }}" alt="" width="100%" height="100%" />
+                            </div>
+                            <div class="col-md-6 pt-2">
+                                <h3>O Mnie</h3>
+                                <span style="font-size: 1.1rem">
+                                    Cześć, jestem uczniem Technikum na profilu Informatyk, w zespole szkół ZSCHIE w Gdyni.
+                                    Jestem współtwórcą projektu Maets, w projekcie korzystałem z umiejętności modelowania baz danych, kodowania layoutu stron w CSS/SASS/HTML/JS jak i programowania logiki
+                                    po stronie serwera za pomocą języka PHP, a właściwie to w większości frameworka Laravel.
+                                    Prywatnie zajmuję się programownaiem aplikacji w języku C# na platformie .NET, jak chodzi o w/w framework to sądzę że rozwijam się
+                                    równolegle w tym kierunku jak w programowaniu w C#.
+                                    W celu rozwijania swoich umiejętności staram się uczęszczać na konferencję zachaczające o tematy IT, bardzo polecam takie eventy,
+                                    ponieważ potrafią bardzo rozwinąć tok rozumowania młodej osoby rozwijającej się w tej dziedzinie.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+{{--                    <div class="modal-footer">--}}
+{{--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--}}
+{{--                        <button type="button" class="btn btn-primary">Save changes</button>--}}
+{{--                    </div>--}}
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="michalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content rounded-1">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Michał Troka</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body m-0 p-0">
+                        <div class="row m-0 p-0">
+                            <div class="col-md-6 m-0 p-0">
+                                <img class="m-0 p-0 rounded-left" style="border-top-left-radius:0px !important;" src="{{ asset('img/team/michal-hover.jpg') }}" alt="" width="100%" height="100%" />
+                            </div>
+                            <div class="col-md-6 pt-2">
+                                <h3>O Mnie</h3>
+                                <span style="font-size: 1.1rem">
+                                    Cześć, jestem uczniem Technikum na profilu Informatyk, w zespole szkół ZSCHIE w Gdyni.
+                                    Jestem współtwórcą projektu Maets, w projekcie korzystałem z umiejętności modelowania baz danych, kodowania layoutu stron w CSS/SASS/HTML/JS jak i programowania logiki
+                                    po stronie serwera za pomocą języka PHP, a właściwie to w większości frameworka Laravel.
+                                    Prywatnie zajmuję się programownaiem aplikacji w języku C# na platformie .NET, jak chodzi o w/w framework to sądzę że rozwijam się
+                                    równolegle w tym kierunku jak w programowaniu w C#.
+                                    W celu rozwijania swoich umiejętności staram się uczęszczać na konferencję zachaczające o tematy IT, bardzo polecam takie eventy,
+                                    ponieważ potrafią bardzo rozwinąć tok rozumowania młodej osoby rozwijającej się w tej dziedzinie.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    {{--                    <div class="modal-footer">--}}
+                    {{--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--}}
+                    {{--                        <button type="button" class="btn btn-primary">Save changes</button>--}}
+                    {{--                    </div>--}}
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="matiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content rounded-1">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Mateusz Ostanówko</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body m-0 p-0">
+                        <div class="row m-0 p-0">
+                            <div class="col-md-6 m-0 p-0">
+                                <img class="m-0 p-0 rounded-left" style="border-top-left-radius:0px !important;" src="{{ asset('img/team/mateusz-hover.jpg') }}" alt="" width="100%" height="100%" />
+                            </div>
+                            <div class="col-md-6 pt-2">
+                                <h3>O Mnie</h3>
+                                <span style="font-size: 1.1rem">
+                                    Cześć, jestem uczniem Technikum na profilu Informatyk, w zespole szkół ZSCHIE w Gdyni.
+                                    Jestem współtwórcą projektu Maets, w projekcie korzystałem z umiejętności modelowania baz danych, kodowania layoutu stron w CSS/SASS/HTML/JS jak i programowania logiki
+                                    po stronie serwera za pomocą języka PHP, a właściwie to w większości frameworka Laravel.
+                                    Prywatnie zajmuję się programownaiem aplikacji w języku C# na platformie .NET, jak chodzi o w/w framework to sądzę że rozwijam się
+                                    równolegle w tym kierunku jak w programowaniu w C#.
+                                    W celu rozwijania swoich umiejętności staram się uczęszczać na konferencję zachaczające o tematy IT, bardzo polecam takie eventy,
+                                    ponieważ potrafią bardzo rozwinąć tok rozumowania młodej osoby rozwijającej się w tej dziedzinie.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    {{--                    <div class="modal-footer">--}}
+                    {{--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--}}
+                    {{--                        <button type="button" class="btn btn-primary">Save changes</button>--}}
+                    {{--                    </div>--}}
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
         <section id="speakers">
             <h3>Our Team</h3> <!-- Section Title -->
             <div class="separator"></div>
@@ -184,7 +302,7 @@
 
                     <!-- Speaker 1 -->
                     <div class="col-md-4">
-                        <a href="#" class="member-profile">
+                        <a href="#" class="member-profile"  data-toggle="modal" data-target="#kubaModal">
                             <div class="unhover_img">
                                 <img src="{{ asset('img/team/kuba.jpg') }}" alt="" />
                             </div>
@@ -203,7 +321,7 @@
 
                     <!-- Speaker 2 -->
                     <div class="col-md-4">
-                        <a href="#" class="member-profile">
+                        <a href="#" class="member-profile" data-toggle="modal" data-target="#michalModal">
                             <div class="unhover_img">
                                 <img src="{{ asset('img/team/michal.jpg') }}" alt="" />
                             </div>
@@ -222,7 +340,7 @@
 
                     <!-- Speaker 3 -->
                     <div class="col-md-4">
-                        <a href="#" class="member-profile">
+                        <a href="#" class="member-profile"  data-toggle="modal" data-target="#matiModal">
                             <div class="unhover_img">
                                 <img src="{{ asset('img/team/mateusz.jpg') }}" alt="" />
                             </div>
