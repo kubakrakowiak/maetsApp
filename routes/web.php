@@ -37,13 +37,19 @@ Route::get('dashboard/users','UsersController@userslistAdmin')->middleware('auth
 
 Route::delete('dashboard/users/{id}','UsersController@destroy')->middleware('auth');
 
-Route::view('dashboard/games','admin_dash.games')->middleware('auth');
+//Route::view('dashboard/games','admin_dash.games')->middleware('auth');
 
 Route::get('dashboard/games','GamesController@gamesList')->middleware('auth');
+
+Route::get('dashboard/groups','GroupsController@groupsList')->middleware('auth');
 
 Route::view('dashboard/addgame','admin_dash.addgame')->middleware('auth');
 
 Route::post('dashboard/addgame','GamesController@addGame')->middleware('auth');
+
+Route::view('dashboard/addgroup','admin_dash.addgroup')->middleware('auth');
+
+Route::post('dashboard/addgroup','GroupsController@addGroup')->middleware('auth');
 
 Route::get('dashboard/adddlc','GamesController@gamesListToDlcs')->middleware('auth');
 

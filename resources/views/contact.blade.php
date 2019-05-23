@@ -294,7 +294,7 @@
             <div class="container">
                 <div class="col-md-12 col-md-offset-2">
                     <!-- Section Description -->
-                    <p>Our team consists of 3 developers. Each of us is very important pearson in this project, 'couse each of us has done a part of the project, and Maets the app would never be created.</p>
+                    <p>Our team consists of 3 developers. Each of us is very important pearson in this project, 'couse each of us has done a part of the project, and Maets the app without somebody would never be created.</p>
                 </div>
 
                 <!-- First Row of Speakers -->

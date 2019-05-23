@@ -2,10 +2,11 @@
 
 namespace App;
 
+use App\game;
+use App\group;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\game;
 
 class User extends Authenticatable
 {
@@ -39,5 +40,8 @@ class User extends Authenticatable
     ];
     public function Games(){
         return $this->belongsToMany(game::class,'user_games')->withTimestamps();;
+    }
+    public function groups(){
+        return $this->belongsToMany(group::class,'user_groups')->withTimestamps();;
     }
 }

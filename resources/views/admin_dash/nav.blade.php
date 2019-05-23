@@ -54,7 +54,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Groups Options:</h6>
                 <a class="collapse-item" href="../dashboard/groups">Groups List</a>
-                <a class="collapse-item" href="../dashboard/groups/add">Add Group</a>
+                <a class="collapse-item" href="../dashboard/addgroup">Add Group</a>
             </div>
         </div>
     </li>
