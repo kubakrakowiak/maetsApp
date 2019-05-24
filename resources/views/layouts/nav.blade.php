@@ -23,6 +23,9 @@
                 <a class="navbar-brand" href="{{ url('/gameslist') }}">
                     Games
                 </a>
+                <a class="navbar-brand" href="{{ url('/groups') }}">
+                    Groups
+                </a>
             </ul>
 
             <!-- Right Side Of Navbar -->

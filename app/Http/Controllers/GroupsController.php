@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\group;
+use App\user_group;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class GroupsController extends Controller
 {
@@ -26,4 +28,23 @@ class GroupsController extends Controller
         ]);
 
     }
+
+    public function groupsListPublic(){
+
+        $groups = group::paginate(10);
+        return view('groups',[
+            'groups'=>$groups,
+        ]);
+
+    }
+    public function groupProfile($groupid){
+        $group = group::where('id',$groupid)->get();
+        $have = user_group::where('user_id','=',Auth::user()->id)->where('group_id','=',$groupid)->count();
+        return view('groupprofile',[
+            'group' => $group,
+            'have' => $have,
+        ]);
+
+    }
+
 }

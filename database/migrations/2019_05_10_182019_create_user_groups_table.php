@@ -21,8 +21,8 @@ class CreateUserGroupsTable extends Migration
         });
         Schema::table('user_groups', function($table)
         {
-            $table->foreign('id_group')->references('id_group')->on('groups')->onDelete('cascade');
-            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('group_id')->references('id')->on('groups')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

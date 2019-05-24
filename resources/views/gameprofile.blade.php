@@ -241,13 +241,13 @@
                 <div class="col-9">
                     <h1 class="display-2">{{$gameprofile[0]->name}}
                         @if($have<1)
-                        <form method="post" style="display: inline" action="/game/{{$gameprofile[0]->id}}/buy/{{ Auth::user()->id }}">
+                        <form method="post" style="display: inline" action="/group/{{$gameprofile[0]->id}}/join/{{ Auth::user()->id }}">
                             @csrf
 
                             <button name="submit" class="btn btn-success">Buy Now</button></h1>
                         </form>
                         @else
-                            <button name="submit" class="btn btn-success" disabled>You already have {{$gameprofile[0]->name}}</button></h1>
+                            <button name="submit" class="btn btn-success" disabled>You are already in {{$gameprofile[0]->name}}</button></h1>
                         @endif
 
                 </div>

@@ -12,8 +12,8 @@
             </th>
             <th class="col-3">
                 Developer
-            </th class="col-3">
-            <th>
+            </th>
+            <th class="col-3">
                 publisher
             </th>
             <th class="col-1">

@@ -25,6 +25,12 @@ Route::get('user/{id}', 'UsersController@getUser')->middleware('auth');
 
 Route::get('gameslist','GamesController@gamesListPublic')->middleware('auth');
 
+Route::get('groups','GroupsController@groupsListPublic')->middleware('auth');
+
+Route::get('groups/{id}','GroupsController@groupProfile')->middleware('auth');
+
+Route::post('groups/{idgame}/join/{iduser}','UsersController@joinGroup')->middleware('auth');
+
 Route::get('game/{id}','GamesController@getGame')->middleware('auth');
 
 Route::post('game/{id}','GamesController@addComment')->middleware('auth');

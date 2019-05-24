@@ -45,4 +45,11 @@ class UsersController extends Controller
         //$user->Games()->attach($idgame);
         return back();
     }
+
+    public function joinGroup($idgroup, $iduser){
+        $user=User::find($iduser);
+        $user->groups()->syncWithoutDetaching([$idgroup]);
+        //$user->Games()->attach($idgame);
+        return back();
+    }
 }
