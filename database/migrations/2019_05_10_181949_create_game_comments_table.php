@@ -24,7 +24,7 @@ class CreateGameCommentsTable extends Migration
 
         Schema::table('game_comments', function($table)
         {
-            $table->foreign('id_game')->references('id_game')->on('games')->onDelete('cascade');
+            $table->foreign('id_game')->references('id')->on('games')->onDelete('cascade');
         });
     }
 

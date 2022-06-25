@@ -23,7 +23,7 @@ class CreateUserGamesTable extends Migration
         Schema::table('user_games', function($table)
         {
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('game_id')->references('id_game')->on('games')->onDelete('cascade');
+            $table->foreign('game_id')->references('id')->on('games')->onDelete('cascade');
         });
     }
 
