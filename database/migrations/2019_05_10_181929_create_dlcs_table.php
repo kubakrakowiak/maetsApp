@@ -23,7 +23,7 @@ class CreateDlcsTable extends Migration
         });
         Schema::table('dlcs', function($table)
         {
-            $table->foreign('id_game')->references('id_game')->on('games')->onDelete('cascade');
+            $table->foreign('id_game')->references('id')->on('games')->onDelete('cascade');
         });
     }
 
